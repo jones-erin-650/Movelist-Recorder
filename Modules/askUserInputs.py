@@ -1,18 +1,18 @@
 def inputCharacter():
-    character = input("Enter a character: ")
+    character = input("Enter the character you're using:\n")
     return character
 def inputInputFile():
-    file = input("Enter input file: ")
+    file = input("Enter input file path:\n")
     return file
 def inputOutputFile():
-    file = input("Enter output file: ")
+    file = input("Enter output folder path:\n")
     return file
-def inputStartRecHotkey():
-    key = input("Enter hotkey for starting recording: ")
+def inputStartRecordHotkey():
+    key = input("Enter hotkey for starting recording:\n")
     return key
-def inputEndRecHotkey():
-    key = input("Enter hotkey for ending recording: ")
+def inputEndRecordHotkey():
+    key = input("Enter hotkey for ending recording:\n")
     return key
 def inputTrainingReset():
-    key = input("Enter the key you will use to reset the training room: ")
+    key = input("Enter the key you will use to reset the training room:\n")
     return key
