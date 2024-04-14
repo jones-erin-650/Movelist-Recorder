@@ -1,3 +1,0 @@
-def pig():
-    print("🐖")
-pig()
