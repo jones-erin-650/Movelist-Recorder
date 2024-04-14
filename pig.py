@@ -1,0 +1,3 @@
+def pig():
+    print("🐖")
+pig()
