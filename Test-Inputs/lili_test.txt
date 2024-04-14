@@ -1,0 +1,14 @@
+D:\New Desktop on Hard drive\EddieInput\Eddienput_1.2\configs\tekken_alt.json
+f W10 1 W5 2 W5 3 W5
+
+W60
+
+1 W10 2 W10 4 W10
+
+W150
+
+d d/f f W10 3+4
+
+W60
+
+1+2
