@@ -15,25 +15,25 @@
 - d d/f f W[10] 3+4 //dew glide
 - W[30]
 - END_RECORDING
-- select+3 //training mode reset button
+- select+3 f//training mode reset button
 - W[30]
 - START_RECORDING
 - W[30]
 - f w[1] d d/f+3 //electric 3
 - END_RECORDING
-- select+3
+- select+3 f
 - W[30]
 - u+3+4 W[10] 2 //scarecrow stance
 - W[30]
 - END_RECORDING
-- select+3 //training mode reset button
+- select+3 f//training mode reset button
 - W[30]
 - START_RECORDING
 - W[30]
 - 1 W[10] 2 W[10] 3 W[10] //1, 2, 3
 - W[30]
 - END_RECORDING
-- select+3 //training mode reset button
+- select+3 f//training mode reset button
 - W[30]
 
 ## 🐖
