@@ -1,0 +1,28 @@
+D:\New Desktop on Hard drive\EddieInput\Eddienput_1.2\configs\tekken_alt.json
+
+RECORD
+
+f W1 d d/f+2
+
+W40
+
+f W1 d d/f+2
+
+W40
+
+f W1 d d/f+2
+
+W40
+
+f W1 d d/f+2
+
+W40
+
+f W1 d d/f+2
+
+W40
+
+f W1 d d/f+2
+
+W40
+
