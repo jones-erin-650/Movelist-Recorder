@@ -5,7 +5,8 @@
     "sidestep": "u",
     "fc": "[d] W5",
     "during_heat": "2+3",
-
+    "qcf": "d d/f f",
+    "qcb": "d d/b b",
 
     "alisa" : {
         "des": "d+1+2",
