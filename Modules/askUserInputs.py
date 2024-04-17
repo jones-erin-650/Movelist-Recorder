@@ -4,8 +4,11 @@ def inputCharacter():
 def inputInputFile():
     file = input("Enter input file path:\n")
     return file
-def inputOutputFile():
+def inputOutputPath():
     file = input("Enter output folder path:\n")
+    return file
+def inputOutputFileName():
+    file = input("Enter output file name:\n")
     return file
 def inputStartRecordHotkey():
     key = input("Enter hotkey for starting recording:\n")
