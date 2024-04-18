@@ -1,0 +1,140 @@
+{
+    "simple_inputs": {
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "d": "",
+        "b": "",
+        "f": "",
+        "u": "",
+        "d/b": "",
+        "d/f": "",
+        "u/b": "",
+        "u/f": "",
+        "select": "",
+        "start": ""
+    },
+    "complex_inputs": {
+        "db": "d/b",
+        "df": "d/f",
+        "ub": "u/b",
+        "uf": "u/f",
+        "ws": "[d] W5 ]d[ W5",
+        "wr": "f f f",
+        "ss": "u",
+        "sidestep": "u",
+        "fc": "[d] W5",
+        "during_heat": "2+3",
+        "qcf": "d d/f f",
+        "qcb": "d d/b b",
+
+        "alisa" : {
+            "des": "d+1+2",
+            "destructive_form": "d+1+2",
+            "sbt": "f+3+4",
+            "boot": "f+3+4",
+            "single_boot": "f+3+4"
+        },
+        "asuka": {
+
+        },
+        "azucena": {
+            "back_to_the_opponent": "",
+            "libertador": "f+3+4",
+            "lib": "f+3+4"
+        },
+        "bryan": {
+            "snake_eyes": "1+3+4 W5"
+        },
+        "claudio": {
+
+        },
+        "devil_jin": {
+
+        },
+        "dragunov": {
+
+        },
+        "feng": {
+
+        },
+        "hwoarang": {
+
+        },
+        "jack-8": {
+
+        },
+        "jin": {
+
+        },
+        "jun": {
+
+        },
+        "kazuya": {
+
+        },
+        "king": {
+
+        },
+        "kuma": {
+
+        },
+        "lars": {
+
+        },
+        "law": {
+
+        },
+        "lee": {
+
+        },
+        "leo": {
+
+        },
+        "leroy": {
+
+        },
+        "lili": {
+
+        },
+        "nina": {
+
+        },
+        "panda": {
+
+        },
+        "paul": {
+
+        },
+        "raven": {
+
+        },
+        "reina": {
+
+        },
+        "shaheen": {
+
+        },
+        "steve": {
+
+        },
+        "victor": {
+
+        }, 
+        "xiaoyu": {
+
+        },
+        "yoshimitsu": {
+
+        },
+        "zafina": {
+            "tarantula_stance": "d+1+2",
+            "trt": "d+1+2",
+            "scarecrow_stance": "3+4",
+            "scr": "3+4",
+            "mantis_stance": "d+3+4",
+            "mnt": "d+3+4"
+        }
+    }
+}
