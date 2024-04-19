@@ -8,6 +8,7 @@ with open('View/vars.json') as f:
 #Create main window and set attributes
 window = tk.Tk()
 window.title('Test GUI')
+window.iconbitmap('View/my_dog.ico')
 window.geometry('540x320')
 window.eval('tk::PlaceWindow . center')
 
