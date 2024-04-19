@@ -23,6 +23,9 @@ def main():
             # loop body
             # open the output file
             f = open(outputFile, "a")
+            
+            f.write("Hello!")
+
             f.write("Hello!")
 
 
