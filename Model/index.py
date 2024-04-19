@@ -48,7 +48,7 @@ def main():
     
     inputFile = '../Tests/Test-Inputs/nicer_devil_jin.txt'
     outputFile = '../Tests/Test-Outputs/test_output.txt'
-    
+
     # a loop to go line by line through the input file and interpret what is written, then output an eddie-input readable translation to the output file 
     # with open('') as file:
     #     for line in file:
@@ -59,13 +59,16 @@ def main():
     #         # reset training mode & start recording
 
     #         f.write(startRecording)
-    #         f.write('\n')
 
-    #         # replace the commas with frame padding
+    #         # break the line into a subarray1 at the string_parser (comma, greater than, etc)
 
-    #         replacementLine = line.replace(',', ' W10 ')
+    #         # break that subarray2 into another subarray at the +
 
-    #         # now we have to split at the +'s and interpret stances and complex inputs
+    #         #go through that subarray and interpret the tokens
+
+    #         # join subarray2 with + again
+
+    #         #join subarray1 with the string_parser
 
     #         f.write(replacementLine)
 
