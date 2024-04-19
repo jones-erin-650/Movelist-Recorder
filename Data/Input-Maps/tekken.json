@@ -28,6 +28,7 @@
         "during_heat": "2+3",
         "qcf": "d d/f f",
         "qcb": "d d/b b",
+        ",": "W[10]",
 
         "alisa" : {
             "des": "d+1+2",
