@@ -27,11 +27,9 @@ def constructEndRecording(framePadding):
     return ' ' + framePadding + ' END_RECORD \n'
 
 def main():
-    userInputsPath = (Path('..') / 'Data' / 'variables.JSON')
-    print(userInputsPath)
+    userInputsPath = ''
 
     inputMapPath = constructInputMapPath('tekken')
-    print(inputMapPath)
     # import the json files here: 
     
 
@@ -45,38 +43,46 @@ def main():
     startRecording = constructStartRecording('select+3', 'W120')
     endRecording = constructEndRecording('W60')
     
+
+    inputFile = os.path.abspath('D:/New Desktop on Hard drive/CS Stuff/Self Done Projects/Input Recorder/Eddie-Input-Move-Recorder/Tests/Test-Inputs/nicer_devil_jin.txt')
     
-    inputFile = '../Tests/Test-Inputs/nicer_devil_jin.txt'
-    outputFile = '../Tests/Test-Outputs/test_output.txt'
+    outputFile = os.path.abspath('D:/New Desktop on Hard drive/CS Stuff/Self Done Projects/Input Recorder/Eddie-Input-Move-Recorder/Tests/Test-Outputs/test_output.txt')
+
+    # open the output file
+    f = open(outputFile, "a")
 
     # a loop to go line by line through the input file and interpret what is written, then output an eddie-input readable translation to the output file 
-    # with open('') as file:
-    #     for line in file:
-    #         # loop body
-    #         # open the output file
-    #         f = open('', "a")
+    with open(inputFile) as file:
+        for line in file:
+            # loop body
+            
 
-    #         # reset training mode & start recording
+            # reset training mode & start recording
 
-    #         f.write(startRecording)
+            f.write(startRecording)
 
-    #         # break the line into a subarray1 at the string_parser (comma, greater than, etc)
+            # break the line into a subarray1 at the string_parser (comma, greater than, etc)
 
-    #         # break that subarray2 into another subarray at the +
+            subArrayComma = line.split(',')
 
-    #         #go through that subarray and interpret the tokens
+            # break that subarray2 into another subarray at the +
 
-    #         # join subarray2 with + again
+            subArrayPlus = subArrayComma.split('+')
+            print(subArrayPlus)
 
-    #         #join subarray1 with the string_parser
+            #go through that subarray and interpret the tokens
 
-    #         f.write(replacementLine)
+            # join subarray2 with + again
 
-    #         # end recording
-    #         f.write(endRecording)
+            #join subarray1 with the string_parser
 
-    #         # close output file
-    #         f.close
+            # f.write(replacementLine)
+
+            # end recording
+            f.write(endRecording)
+
+            # close output file
+            f.close
             
 if __name__=="__main__": 
     main() 
