@@ -15,9 +15,22 @@ def constructInputMapPath(gameName):
 def addFramePadding(padding):
     return " W" + padding + " "
 
-def interpretInput(input):
+def interpretInput(token):
     # this should take an input token, see if it's in the complex or simple input map, if it's in the simple map it just returns the key, if it's in the complex it returns the corresponding value
-    return input
+
+    # check if token is in simple map, if it is then just use the key
+
+    # check if token is in complex map, if it is then use the value
+
+    # if it's not in either and contains a comma then it needs to be interpretted differently to handle that comma
+    if ',' in token:
+        token.replace(',', ' W10 ')
+        print(token)
+
+
+    # return an error in the else
+
+    return token
 
 def constructStartRecording(trainingModeReset, framePadding):
     startRecording = ' ' + trainingModeReset + ' ' + framePadding + ' START_RECORD ' + framePadding + '\n'
@@ -63,20 +76,18 @@ def main():
 
             # break the line into a subarray1 at the string_parser (comma, greater than, etc)
 
-            subArrayComma = line.split(',')
+            subArrayPlus = line.split('+')
+            for token in subArrayPlus:
+                #go through that subarray and interpret the tokens
+                token = interpretInput(token)
 
-            # break that subarray2 into another subarray at the +
-
-            subArrayPlus = subArrayComma.split('+')
-            print(subArrayPlus)
-
-            #go through that subarray and interpret the tokens
-
-            # join subarray2 with + again
+            # join the array with the +
+            replacementLine = '+'.join(subArrayPlus)
+            
 
             #join subarray1 with the string_parser
 
-            # f.write(replacementLine)
+            f.write(replacementLine)
 
             # end recording
             f.write(endRecording)
