@@ -3,7 +3,8 @@ const readline = require('readline')
 
 // need to do this since the readline module only works with readable streams
 const file = readline.createInterface({
-    input: fs.createReadStream('source_to_file'),
+    // HARDCODED
+    input: fs.createReadStream('../Tests/Test-Inputs/nicer_devil_jin.txt'),
     output: process.stdout,
     terminal: false
 })
@@ -20,12 +21,12 @@ export function constructInputMapPath(gameName: string) {
     return path
 }
 
-export const addFramePadding(padding: string) => {
+export function addFramePadding(padding: string) {
     return " W" + padding + " "
 }
     
 
-export const interpretInput(token: string) => {
+export function interpretInput(token: string)  {
 
 
     // this should take an input token, see if it's in the complex or simple input map, if it's in the simple map it just returns the key, if it's in the complex it returns the corresponding value
@@ -44,11 +45,11 @@ export const interpretInput(token: string) => {
     return token
 }
 
-export const constructStartRecording(trainingModeReset: string, framePadding: string) => {
+export function constructStartRecording(trainingModeReset: string, framePadding: string) {
     const startRecording = ' ' + trainingModeReset + ' ' + framePadding + ' START_RECORD ' + framePadding + '\n'
     return startRecording
 }
-export const constructEndRecording(framePadding: string) => {
+export function constructEndRecording(framePadding: string)  {
     return ' ' + framePadding + ' END_RECORD \n'
 }
 
