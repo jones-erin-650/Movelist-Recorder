@@ -1,147 +1,138 @@
 {
     "string_parser": "+",
     "buffer_notation": ",",
-    "simple_inputs": {
-        "1": "1",
-        "2": "2",
-        "3": "3",
-        "4": "4",
-        "d": "d",
-        "b": "b",
-        "f": "f",
-        "u": "u",
-        "d/b": "d/b",
-        "d/f": "d/f",
-        "u/b": "u/b",
-        "u/f": "u/f",
-        "select": "select",
-        "start": "start"
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "d": "d",
+    "b": "b",
+    "f": "f",
+    "u": "u",
+    "d/b": "d/b",
+    "d/f": "d/f",
+    "u/b": "u/b",
+    "u/f": "u/f",
+    "select": "select",
+    "start": "start",
+
+    "db": " d/b ",
+    "df": " d/f ",
+    "ub": " u/b ",
+    "uf": " u/f ",
+    "ws": " [d] W5 ]d[ W5 ",
+    "wr": " f f f ",
+    "ss": " u ",
+    "sidestep": " u ",
+    "fc": " [d] W5 ",
+    "during_heat": " 2+3 ",
+    "qcf": " d d/f f ",
+    "qcb": " d d/b b ",
+    ",": " W[10] ",
+    "~": " W[5] ",
+
+    "__ALISA__": "",
+        "des": "d+1+2",
+        "destructive_form": "d+1+2",
+        "sbt": "f+3+4",
+        "boot": "f+3+4",
+        "single_boot": "f+3+4",
+    "__ASUKA__": {},
+    "__AZUCENA__": "",
+        "back_to_the_opponent": "",
+        "bt_azucena": "",
+        "libertador": "f+3+4",
+        "lib": "f+3+4",
+    "__BRYAN__": "",
+        "snake_eyes": "1+3+4 W5",
+    "claudio": {
+
     },
-    "complex_inputs": {
-        "db": " d/b ",
-        "df": " d/f ",
-        "ub": " u/b ",
-        "uf": " u/f ",
-        "ws": " [d] W5 ]d[ W5 ",
-        "wr": " f f f ",
-        "ss": " u ",
-        "sidestep": " u ",
-        "fc": " [d] W5 ",
-        "during_heat": " 2+3 ",
-        "qcf": " d d/f f ",
-        "qcb": " d d/b b ",
-        ",": " W[10] ",
-        "~": " W[5] ",
+    "devil_jin": {
 
-        "alisa" : {
-            "des": "d+1+2",
-            "destructive_form": "d+1+2",
-            "sbt": "f+3+4",
-            "boot": "f+3+4",
-            "single_boot": "f+3+4"
-        },
-        "asuka": {
+    },
+    "dragunov": {
 
-        },
-        "azucena": {
-            "back_to_the_opponent": "",
-            "libertador": "f+3+4",
-            "lib": "f+3+4"
-        },
-        "bryan": {
-            "snake_eyes": "1+3+4 W5"
-        },
-        "claudio": {
+    },
+    "feng": {
 
-        },
-        "devil_jin": {
+    },
+    "hwoarang": {
 
-        },
-        "dragunov": {
+    },
+    "jack-8": {
 
-        },
-        "feng": {
+    },
+    "jin": {
 
-        },
-        "hwoarang": {
+    },
+    "jun": {
 
-        },
-        "jack-8": {
+    },
+    "kazuya": {
 
-        },
-        "jin": {
+    },
+    "king": {
 
-        },
-        "jun": {
+    },
+    "kuma": {
 
-        },
-        "kazuya": {
+    },
+    "lars": {
 
-        },
-        "king": {
+    },
+    "law": {
 
-        },
-        "kuma": {
+    },
+    "lee": {
 
-        },
-        "lars": {
+    },
+    "leo": {
 
-        },
-        "law": {
+    },
+    "leroy": {
 
-        },
-        "lee": {
+    },
+    "__LILI__": "",
+        "dew": "d d/f f",
+        "bt_lili": "b+3+4",
+        "rab": "b+3",
+    
+    "nina": {
 
-        },
-        "leo": {
+    },
+    "panda": {
 
-        },
-        "leroy": {
+    },
+    "paul": {
 
-        },
-        "lili": {
-            "dew": "d d/f f",
-            "bt": "b+3+4",
-            "rab": "b+3"
-            
-        },
-        "nina": {
+    },
+    "raven": {
 
-        },
-        "panda": {
+    },
+    "reina": {
 
-        },
-        "paul": {
+    },
+    "shaheen": {
 
-        },
-        "raven": {
+    },
+    "steve": {
 
-        },
-        "reina": {
+    },
+    "victor": {
 
-        },
-        "shaheen": {
+    }, 
+    "xiaoyu": {
 
-        },
-        "steve": {
+    },
+    "yoshimitsu": {
 
-        },
-        "victor": {
-
-        }, 
-        "xiaoyu": {
-
-        },
-        "yoshimitsu": {
-
-        },
-        "zafina": {
-            "tarantula_stance": "d+1+2",
-            "trt": "d+1+2",
-            "scarecrow_stance": "3+4",
-            "scr": "3+4",
-            "mantis_stance": "d+3+4",
-            "mnt": "d+3+4"
-        }
-    }
+    },
+    "__ZAFINA__": "",
+        "tarantula_stance": "d+1+2",
+        "trt": "d+1+2",
+        "scarecrow_stance": "3+4",
+        "scr": "3+4",
+        "mantis_stance": "d+3+4",
+        "mnt": "d+3+4"
 }

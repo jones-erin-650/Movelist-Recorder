@@ -40,6 +40,12 @@ export function interpretInput(token: string, inputMap: JSON)  {
     return token
 }
 export function interpretInputHelper(token: string, inputMap: JSON)  {
+    // multiple tekken characters have backturn stances, they are always shortened to bt so we need to specify which character
+    if(token == 'bt') {
+        // gonna need to input the user specified characterName
+        // token = 'bt_' + characterName 
+    }
+
     if(inputMap[token] != undefined){
         token = inputMap[token]
         return token
