@@ -1,5 +1,3 @@
-// importing the data from the json file
-import inputMapData from '../../Data/Input-Maps/tekken.json' assert {type: 'json'}
 
 // this file should import all the user inputs and pass them into the string parser
 
