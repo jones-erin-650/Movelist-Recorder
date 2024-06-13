@@ -1,0 +1,20 @@
+{
+  "name": "tekken-movelist-recorder",
+  "version": "0.0.1",
+  "description": "A project that parses and records movelists",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "react",
+    "tailwind"
+  ],
+  "author": "Erin Jones",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^31.0.1"
+  }
+}
