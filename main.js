@@ -7,16 +7,23 @@ let mainWindow;
 function createMainWindow() {
   mainWindow = new BrowserWindow({
     title: 'File Handling',
-    width: 1500,
-    height: 800,
+    width: 800,
+    height: 600,
+
+    webPreferences: {
+      
+    }
   });
 
+  // just opens the f12 menu on startup
+  mainWindow.webContents.openDevTools()
+
   const startUrl = url.format({
-    pathname: path.join(__dirname, 'index.html'),
+    pathname: path.join(__dirname, './app/build/index.html'),
     protocol: 'file',
   });
 
-  mainWindow.loadURL(startURL)
+  mainWindow.loadURL(startUrl)
 
 }
 
