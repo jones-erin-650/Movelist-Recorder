@@ -9,10 +9,6 @@ function createMainWindow() {
     title: 'File Handling',
     width: 800,
     height: 600,
-
-    webPreferences: {
-      
-    }
   });
 
   // just opens the f12 menu on startup
