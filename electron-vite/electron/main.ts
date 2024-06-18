@@ -32,6 +32,7 @@ function createWindow() {
     webPreferences: {
       preload: path.join(__dirname, 'preload.mjs'),
     },
+    autoHideMenuBar: true
   })
 
   // Test active push message to Renderer-process.
