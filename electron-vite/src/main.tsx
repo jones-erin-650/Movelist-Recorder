@@ -1,17 +1,16 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import {RouterProvider} from "react-router-dom";
 
-import {router} from './View/Routes/Router'
-
-
+import { BrowserRouter} from "react-router-dom";
+import { RouterWrapper } from './View/Components/RouterWrapper';
+import React from 'react';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router}>
-    </RouterProvider>
-  </React.StrictMode>,
+    <BrowserRouter>
+      <RouterWrapper/>
+    </BrowserRouter>
+  </React.StrictMode>
 )
 
 // Use contextBridge

@@ -1,22 +1,21 @@
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 
 import Info from '../Routes/Info.tsx'
 import Files from '../Routes/Files.tsx'
 import Recording from '../Routes/Recording.tsx'
+import Navbar from "./Navbar.tsx";
 
-
-const router = createBrowserRouter([
-  { path: "/", element: <Info /> },
-  { path: "/files", element: <Files /> },
-  { path: "/recording", element: <Recording /> },
-]);
-
-
-const RouteWrapper = () => {
+export function RouterWrapper() {
   return (
-    <RouterProvider router={router}>
-    </RouterProvider>
+    <>
+      <Navbar />
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Info />} />
+          <Route path="/files" element={<Files />} />
+          <Route path="/recording" element={<Recording />} />
+        </Routes>
+      </div>
+    </>
   )
 }
-
-export default RouteWrapper
