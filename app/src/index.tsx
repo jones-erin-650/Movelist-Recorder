@@ -3,13 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Layout } from './View/Components/Layout';
+import { Recorder } from './View/Pages/Recorder';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Layout />}></Route>
+          <Route path='/recorder' element={<Recorder/>}></Route>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

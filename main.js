@@ -18,6 +18,9 @@ function createMainWindow() {
   // just opens the f12 menu on startup
   mainWindow.webContents.openDevTools()
 
+  // gets rid of the top example menu
+  mainWindow.removeMenu()
+
   const startUrl = url.format({
     pathname: path.join(__dirname, './app/build/index.html'),
     protocol: 'file',
