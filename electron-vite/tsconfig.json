@@ -32,8 +32,12 @@
       "Components/*": ["./src/View/Component"],
       "Assets/*": ["./.src/View/Assets/*", "./.src/View/Assets/"],
       "Model/*": ["./.src/model/*"]
-    }
+    },
+    "types": [
+      "vite/client"
+    ]
   },
   "include": ["src", "electron"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+  
 }

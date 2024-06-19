@@ -1,12 +1,16 @@
 
-import '../Components/App.css'
 
 
 function Info() {
 
   return (
     <> 
-      <h1>Info</h1>
+      <h1 className="text-3xl font-bold underline">
+      Info
+      </h1>
+      
+      <button className="btn">Button</button>
+
     </>
   )
 }
