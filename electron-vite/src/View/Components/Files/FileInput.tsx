@@ -1,12 +1,12 @@
-type Props = { label: String };
 
 
-const FileInput = (Props) => {
+const FileInput = ({label}: {label: string}) => {
+
   return (
     <>
       <label className="form-control w-full max-w-xs">
         <div className="label">
-          <span className="label-text">{Props.label}</span>
+          <span className="label-text">{label}</span>
         </div>
         <input type="file" className="file-input file-input-bordered w-full max-w-xs" />
       </label>
