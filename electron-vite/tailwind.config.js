@@ -5,10 +5,19 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    containter: {
+    
+    },
+    extend: {
+      spacing: {
+        sm: '8px',
+        md: '12px',
+        lg: '16px',
+        xl: '24px',
+      }
+    }
   },
   plugins: [
     require('daisyui'),
   ],
 }
-
