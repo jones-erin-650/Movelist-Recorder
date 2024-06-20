@@ -6,22 +6,24 @@ const Files = () => {
       
 
 
-      <div className="flex flex-col w-full lg:flex-row">
 
+
+      <div className="flex w-full align-content: center">
+        
         {/* left side with file handling */}
-        <div className="grid flex-grow h-32 card bg-base-300 rounded-box place-items-left p-4">
-          
+        <div className="grid h-auto flex-grow card bg-base-300 rounded-box place-items-left p-4">
+
           <FileInput 
-            label='Choose your input txt file:'
-          />
-          
-        </div> 
-
-        <div className="divider lg:divider-horizontal"></div>
-
-         {/*right side with console  */}
-        <div className="grid flex-grow h-32 card bg-base-300 rounded-box place-items-center"></div>
+              label='Choose your input txt file:'
+            />
+            
+        </div>
+        <div className="divider divider-horizontal"></div>
+        <div className="grid h-auto flex-grow card bg-base-300 rounded-box place-items-center">content</div>
       </div>
+
+
+
     </>
 
 

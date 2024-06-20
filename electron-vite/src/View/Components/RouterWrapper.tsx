@@ -9,7 +9,7 @@ export function RouterWrapper() {
   return (
     <>
       <Navbar />
-      <div className="container px-4 py-4">
+      <div className="container px-4 py-4 mx-auto">
         <Routes>
           <Route path="/" element={<Info />} />
           <Route path="/files" element={<Files />} />
