@@ -1,8 +1,8 @@
 import { Route, Routes} from "react-router-dom";
 
-import Info from '../Routes/Info.tsx'
-import Files from '../Routes/Files.tsx'
-import Recording from '../Routes/Recording.tsx'
+import Info from '../Pages/Info.tsx'
+import Files from '../Pages/Files.tsx'
+import Recording from '../Pages/Recording.tsx'
 import Navbar from "./Navbar.tsx";
 
 export function RouterWrapper() {
