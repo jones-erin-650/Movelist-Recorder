@@ -1,4 +1,5 @@
-import FileInput from "../Components/Files/FileInput"
+import FileInput from "../Components/Inputs/FileInput"
+import TekkenDropdown from "../Components/Inputs/TekkenDropdown"
 
 const Files = () => {
   return (
@@ -9,12 +10,17 @@ const Files = () => {
           <div className="h-auto w-1/2 card bg-base-300 rounded-box place-items-left p-4">
 
             <FileInput 
-                label='Choose your input txt file:'
-              />
+              label='Choose your input txt file:'
+            />
+
+            <br />
+
+            <TekkenDropdown />
               
           </div>
           <div className="divider divider-horizontal"></div>
           <div className="grid h-auto w-1/2 card bg-base-300 rounded-box place-items-center"></div>
+          
         </div>
 
 
