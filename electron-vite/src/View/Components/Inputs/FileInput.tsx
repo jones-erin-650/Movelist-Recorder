@@ -1,5 +1,3 @@
-
-
 const FileInput = ({label}: {label: string}) => {
 
   return (
