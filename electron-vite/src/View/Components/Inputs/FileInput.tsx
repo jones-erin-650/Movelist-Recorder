@@ -6,7 +6,7 @@ const FileInput = ({label}: {label: string}) => {
         <div className="label">
           <span className="label-text">{label}</span>
         </div>
-        <input type="file" className="file-input file-input-bordered w-full max-w-xs" />
+        <input type="file" className="file-input file-input-bordered w-full max-w-xs file-input-primary" />
       </label>
     </>
   )

@@ -1,4 +1,3 @@
-import React from 'react'
 import BasicDropdown from './BasicDropdown'
 
 const TekkenDropdown = () => {
@@ -39,11 +38,12 @@ const TekkenDropdown = () => {
     'Zafina'
 
   ]
-    
+  
 
   return (
     <BasicDropdown 
       characters={tekkenCharacters}
+      text='Select Your Character'
     />
   )
 }
