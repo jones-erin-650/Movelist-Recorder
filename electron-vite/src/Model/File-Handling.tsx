@@ -1,11 +1,22 @@
-// import { useState } from "react";
+import {create} from 'zustand'
 
-// // the selectedCharacter needs to be used for naming files and parsing backturned stances
-// const [selectedCharacter, setSelectedCharacter] = useState('')
+// This character is needed to handle backturn stance parsing and naming recordings
 
-// // needs states for the input file, output file path, and output file
+// When you create a store with zustand it's a custom hook that can be used anywhere
+type CharacterStore = {
+  character: String
+}
 
+export const useCharacter = create<CharacterStore>((set) => ({
+  character: ''
+}))
 
-// export function fileModel() {
-    
-// }
+// input text file to be parsed
+
+type MovelistStore = {
+  movelist: File | null,
+}
+
+export const useMovelist = create<MovelistStore>((set) => ({
+  movelist: null
+}))

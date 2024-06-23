@@ -1,7 +1,10 @@
+import TopBlock from "../Components/Sections/TopBlock"
 
 const Recording = () => {
   return (
-    <div>Recording</div>
+    <>
+      <TopBlock />
+    </>
   )
 }
 
