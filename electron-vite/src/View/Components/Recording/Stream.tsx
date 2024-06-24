@@ -1,13 +1,7 @@
-import { useState } from "react"
+import { useState, useRef } from "react"
 
 const Stream = () => {
-  const [display, setSelection] = useState();
-
-  
-  
-  return (
-    <video>Stream</video>
-  )
+  return <div></div>
 }
 
 export default Stream
