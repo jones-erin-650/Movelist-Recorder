@@ -1,6 +1,10 @@
 const RecordingBlock = () => {
   return (
-    <div>RecordingBlock</div>
+    <>
+      <div className="divider divider-primary">File Parsing</div>
+      <div>RecordingBlock</div>
+
+    </>
   )
 }
 
