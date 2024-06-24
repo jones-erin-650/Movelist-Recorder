@@ -4,12 +4,15 @@ import {create} from 'zustand'
 
 // When you create a store with zustand it's a custom hook that can be used anywhere
 type CharacterStore = {
-  character: String
+  character: string,
+  setCharacter: (input:string) => void
 }
 
 export const useCharacter = create<CharacterStore>((set) => ({
-  character: ''
+  character: 'no character selected',
+  setCharacter: (input:string) => set({character: input})
 }))
+
 
 // input text file to be parsed
 
