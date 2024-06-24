@@ -1,6 +1,20 @@
+import { useCharacter } from '@/Model/File-Handling'
 import BasicDropdown from './BasicDropdown'
 
 const TekkenDropdown = () => {
+  
+  const character = useCharacter((state) => state.character)
+  console.log('character: ' + character)
+
+  const setCharacter = useCharacter((state) => state.setCharacter)
+
+
+  function characterSelect(inputCharacter: string) {
+    setCharacter(inputCharacter)
+    console.log('character in state: ' + JSON.stringify(character))
+  }
+
+  
 
   // there's probably a better way to do this considering we already have a whole json file with all the characters' names
   const tekkenCharacters = [
@@ -44,6 +58,7 @@ const TekkenDropdown = () => {
     <BasicDropdown 
       characters={tekkenCharacters}
       text='Select Your Character'
+      onChangeHandler={characterSelect}
     />
   )
 }
