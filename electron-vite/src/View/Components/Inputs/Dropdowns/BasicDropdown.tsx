@@ -4,7 +4,7 @@ const BasicDropdown = (
     characters: string[], 
     text: string, 
     //  this is so you can bind different variables to this component
-     onChangeHandler(...args: any[]): void},
+     onChangeHandler(input: string): void},
   ) => {
 
   const change = (e) => {
