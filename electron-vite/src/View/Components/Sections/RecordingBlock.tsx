@@ -40,12 +40,14 @@ const RecordingBlock = () => {
 
         <br />
 
-        <div className="">
-          <BasicButton text='Start' color='primary' size='wide'/>
-          <br />
-          <BasicButton text='Stop' color='secondary' size='wide'/>
-        </div>
+        <br />
+        <BasicButton text='Start' color='primary' size='wide'/>
+        <BasicButton text='Stop' color='secondary'/>
+
+        
       </div>
+
+      
 
     </>
   )

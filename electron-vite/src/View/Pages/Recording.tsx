@@ -6,7 +6,7 @@ const Recording = () => {
     <>
       <TopBlock />
 
-      <div className="divider  divider-primary">Recroding</div>
+      <div className="divider  divider-primary">Recording</div>
 
       <RecordingBlock />
 

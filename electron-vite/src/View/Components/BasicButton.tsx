@@ -7,7 +7,7 @@ const BasicButton = (
 ) => {
   return (
     <>
-      <button className={`btn btn-${color} btn-${size}`}>{text}</button>
+      <button className={`btn btn-${color} btn-wide`}>{text}</button>
     </>
   )
 }
