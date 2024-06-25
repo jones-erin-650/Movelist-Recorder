@@ -1,4 +1,5 @@
 
+import { useFileNaming } from "../../../Model/Screen-Recorder"
 import BasicButton from "../BasicButton"
 import BasicDropdown from "../Inputs/Dropdowns/BasicDropdown"
 import FileInput from "../Inputs/FileInput"
@@ -8,6 +9,13 @@ import Stream from "../Recording/Stream"
 const RecordingBlock = () => {
   const dummyArray = ['hi', 'hihi']
   const dummyFunction = () => {}
+
+  const fileNaming = useFileNaming((state) => state.fileNaming)
+
+  const toggleFileNaming = useFileNaming((state) => state.toggleFileNaming)
+
+  console.log('file naming: ' + fileNaming)
+
   return (
     <>
       <div className="flex w-full align-content: center ">
@@ -17,7 +25,10 @@ const RecordingBlock = () => {
         <FileInput  label='Output folder' />
 
         <div className="mt-9">
-          <Toggle text='Use movelist for names?' />
+          <Toggle 
+            text='Use movelist for names?' 
+            isCheckedSet={toggleFileNaming}
+          />
         </div>
 
         <br />
