@@ -1,8 +1,9 @@
+
 import BasicButton from "../BasicButton"
 import BasicDropdown from "../Inputs/Dropdowns/BasicDropdown"
 import FileInput from "../Inputs/FileInput"
 import Toggle from "../Inputs/Toggle"
-import Stream from '../Recording/Stream'
+import Stream from "../Recording/Stream"
 
 const RecordingBlock = () => {
   const dummyArray = ['hi', 'hihi']
