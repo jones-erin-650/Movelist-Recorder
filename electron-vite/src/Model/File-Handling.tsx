@@ -13,6 +13,19 @@ export const useCharacter = create<CharacterStore>((set) => ({
   setCharacter: (input:string) => set({character: input})
 }))
 
+// software dropdown
+
+type SoftwareStore = {
+  software: string,
+  setSoftware: (input:string) => void
+}
+
+export const useSoftware = create<SoftwareStore>((set) => ({
+  software: 'no software selected',
+  setSoftware: (input:string) => set({software: input})
+}))
+
+
 
 // input text file to be parsed
 
