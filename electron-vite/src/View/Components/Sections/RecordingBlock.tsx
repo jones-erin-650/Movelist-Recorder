@@ -22,7 +22,7 @@ const RecordingBlock = () => {
 
         <br />
         <div className="pl-2">
-          <BasicButton text='Start recording sequence' color='primary' size='wide'/>
+          <BasicButton text='Start recording sequence' color='primary' size='md'/>
 
         </div>
 
