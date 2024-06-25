@@ -1,4 +1,4 @@
-import { useMovelist } from "@/Model/File-Handling"
+import { useMovelist } from '../../../Model/File-Handling'
 
 const FileInput = ({label}: {label: string}) => {
 
