@@ -18,8 +18,10 @@ export const useCharacter = create<CharacterStore>((set) => ({
 
 type MovelistStore = {
   movelist: File | null,
+  setMovelist: (input:File) => void
 }
 
 export const useMovelist = create<MovelistStore>((set) => ({
-  movelist: null
+  movelist: null,
+  setMovelist: (input:File) => set({movelist: input})
 }))

@@ -1,3 +1,4 @@
+
 import BasicButton from "../BasicButton"
 import BasicDropdown from "../Inputs/Dropdowns/BasicDropdown"
 import FileInput from "../Inputs/FileInput"
@@ -42,7 +43,7 @@ const RecordingBlock = () => {
           <BasicButton text='Stop' color='secondary' size='wide'/>
         </div>
       </div>
-      
+
     </>
   )
 }
