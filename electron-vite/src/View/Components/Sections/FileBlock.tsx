@@ -1,12 +1,19 @@
+import { useErrorComments } from "../../../Model/File-Handling"
 import BasicButton from "../BasicButton"
 import Download from "../Inputs/Download"
 import SoftwareDropdown from "../Inputs/Dropdowns/SoftwareDropdown"
 import Toggle from "../Inputs/Toggle"
-
-
 import ConsoleBlock from "./ConsoleBlock"
 
 const FileBlock = () => {
+
+  const errorComments = useErrorComments((state) => state.errorComments)
+
+  const toggleErrorComments = useErrorComments((state) => state.toggleErrorComments)
+
+  console.log('error comments: ' + errorComments)
+
+
   return (
     <div className="flex w-full align-content: center">
         
@@ -17,7 +24,10 @@ const FileBlock = () => {
 
         <br />
 
-        <Toggle text='Comment out errors?' />
+        <Toggle 
+          text='Comment out errors?' 
+          isCheckedSet={toggleErrorComments}
+        />
 
         <br />
 

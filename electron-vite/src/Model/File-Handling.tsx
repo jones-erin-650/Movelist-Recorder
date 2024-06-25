@@ -38,3 +38,15 @@ export const useMovelist = create<MovelistStore>((set) => ({
   movelist: null,
   setMovelist: (input:File) => set({movelist: input})
 }))
+
+// toggle to comment out errors or end the program when found
+
+type ErrorCommentsStore = {
+  errorComments: boolean,
+  toggleErrorComments: () => void
+}
+
+export const useErrorComments = create<ErrorCommentsStore>((set) => ({
+  errorComments: true,
+  toggleErrorComments: () => set((state) => ({ errorComments: !state.errorComments }))
+}))

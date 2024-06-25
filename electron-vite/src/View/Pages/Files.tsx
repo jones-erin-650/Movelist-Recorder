@@ -10,11 +10,7 @@ const Files = () => {
 
       <FileBlock />
 
-
     </>
-
-
-
   )
 }
 
