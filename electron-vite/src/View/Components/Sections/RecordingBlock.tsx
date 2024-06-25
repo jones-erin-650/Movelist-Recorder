@@ -31,6 +31,9 @@ const RecordingBlock = () => {
 
         </div>
 
+        <hr />
+
+
         <br />
 
         <Stream />

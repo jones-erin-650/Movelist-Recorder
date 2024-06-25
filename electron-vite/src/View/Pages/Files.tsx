@@ -6,6 +6,8 @@ const Files = () => {
     <>
       <TopBlock />
 
+      <div className="divider  divider-primary">File Parsing</div>
+
       <FileBlock />
 
 
