@@ -1,3 +1,4 @@
+import BasicButton from "../BasicButton"
 import Download from "../Inputs/Download"
 import SoftwareDropdown from "../Inputs/Dropdowns/SoftwareDropdown"
 import Toggle from "../Inputs/Toggle"
@@ -17,6 +18,10 @@ const FileBlock = () => {
         <br />
 
         <Toggle text='Comment out errors?' />
+
+        <br />
+
+        <BasicButton text='Start file parsing' color="primary" size='md'/>
 
         <br />
 

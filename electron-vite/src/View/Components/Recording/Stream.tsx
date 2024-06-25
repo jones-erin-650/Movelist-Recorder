@@ -32,7 +32,7 @@ const startRecording = () => {
 const Stream = () => {
   return (
     <div className="flex justify-center">
-      <button onClick={startRecording}>test</button>
+      <button onClick={startRecording}></button>
       <video id="stream" controls className=""></video>
     </div>
     )
