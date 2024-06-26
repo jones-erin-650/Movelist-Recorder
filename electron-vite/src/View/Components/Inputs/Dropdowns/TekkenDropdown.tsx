@@ -1,4 +1,4 @@
-import { useCharacter } from '../../../../Model/File-Handling'
+import { useCharacter } from '../../../../Model/Input-Handling'
 import BasicDropdown from './BasicDropdown'
 
 const TekkenDropdown = () => {
