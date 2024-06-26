@@ -32,8 +32,8 @@ const RecordingBlock = () => {
         </div>
 
         <br />
-        <div className="pl-2">
-          <BasicButton text='Start recording sequence' color='primary' size='md'/>
+        <div className="pl-2 justify-center">
+          <BasicButton text='Start recording sequence' color='primary' size='block'/>
 
         </div>
 
