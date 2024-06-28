@@ -18,7 +18,10 @@ contextBridge.exposeInMainWorld('ipcRenderer', {
     const [channel, ...omit] = args
     return ipcRenderer.invoke(channel, ...omit)
   },
-  GetDisplays: () => ipcRenderer.invoke('get-displays')
   // You can expose other APTs you need here.
   // ...
+})
+
+contextBridge.exposeInMainWorld('myAPI', {
+  selectFolder: () => ipcRenderer.invoke('dialog:openDirectory'),
 })

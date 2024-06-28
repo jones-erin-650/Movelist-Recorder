@@ -1,4 +1,4 @@
-import { app, BrowserWindow,desktopCapturer } from 'electron'
+import { app, BrowserWindow,desktopCapturer,dialog } from 'electron'
 import { ipcMain } from 'electron'
 import { createRequire } from 'node:module'
 import { fileURLToPath } from 'node:url'
@@ -73,6 +73,18 @@ app.whenReady().then(createWindow)
 
 //IPC Handlers
 
-ipcMain.handle('get-displays', () => {
-  return desktopCapturer.getSources({types: ['screen', 'window']})
+ipcMain.handle('dialog:openDirectory', async () => {
+  //@ts-ignore
+  const { canceled, filePaths } = await dialog.showOpenDialog(win, {
+    properties: ['openDirectory']
+  })
+  if (canceled) {
+    return
+  } else {
+    return filePaths[0]
+  }
 })
+
+// ipcMain.handle('get-displays', () => {
+//   return desktopCapturer.getSources({types: ['screen', 'window']})
+// })
