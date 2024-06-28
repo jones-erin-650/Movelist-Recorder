@@ -1,10 +1,13 @@
-import { app, BrowserWindow } from 'electron'
+import { app, BrowserWindow,desktopCapturer } from 'electron'
+import { ipcMain } from 'electron'
 import { createRequire } from 'node:module'
 import { fileURLToPath } from 'node:url'
 import path from 'node:path'
 
 const require = createRequire(import.meta.url)
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
+
+const util = require("electron-util");
 
 // The built directory structure
 //
@@ -67,3 +70,9 @@ app.on('activate', () => {
 })
 
 app.whenReady().then(createWindow)
+
+//IPC Handlers
+
+ipcMain.handle('get-displays', () => {
+  return desktopCapturer.getSources({types: ['screen', 'window']})
+})
