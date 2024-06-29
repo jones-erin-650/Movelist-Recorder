@@ -22,6 +22,6 @@ contextBridge.exposeInMainWorld('ipcRenderer', {
   // ...
 })
 
-contextBridge.exposeInMainWorld('myAPI', {
+contextBridge.exposeInMainWorld('api', {
   selectFolder: () => ipcRenderer.invoke('dialog:openDirectory'),
 })
