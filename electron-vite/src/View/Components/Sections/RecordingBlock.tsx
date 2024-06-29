@@ -1,4 +1,4 @@
-
+import FolderInput from "../Inputs/FolderInput"
 import { useFileNaming } from "../../../Model/Screen-Recorder"
 import BasicButton from "../BasicButton"
 import BasicDropdown from "../Inputs/Dropdowns/BasicDropdown"
@@ -22,7 +22,7 @@ const RecordingBlock = () => {
         
       {/* left side with file handling */}
       <div className="h-auto w-2/6 card bg-base-300 rounded-box place-items-left p-4 ">
-        <FileInput  label='Output folder' />
+        <FolderInput  label='Output folder' />
 
         <div className="mt-9">
           <Toggle 
