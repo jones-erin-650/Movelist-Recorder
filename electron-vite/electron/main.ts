@@ -7,8 +7,6 @@ import path from 'node:path'
 const require = createRequire(import.meta.url)
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-const util = require("electron-util");
-
 // The built directory structure
 //
 // ├─┬─┬ dist
@@ -73,17 +71,17 @@ app.whenReady().then(createWindow)
 
 //IPC Handlers
 
-ipcMain.handle('dialog:openDirectory', async () => {
-  //@ts-ignore
-  const { canceled, filePaths } = await dialog.showOpenDialog(win, {
-    properties: ['openDirectory']
-  })
-  if (canceled) {
-    return
-  } else {
-    return filePaths[0]
-  }
-})
+// ipcMain.handle('dialog:openDirectory', async () => {
+//   //@ts-ignore
+//   const { canceled, filePaths } = await dialog.showOpenDialog(win, {
+//     properties: ['openDirectory']
+//   })
+//   if (canceled) {
+//     return
+//   } else {
+//     return filePaths[0]
+//   }
+// })
 
 // ipcMain.handle('get-displays', () => {
 //   return desktopCapturer.getSources({types: ['screen', 'window']})
