@@ -45,11 +45,7 @@ const RecordingBlock = () => {
         {/* right side with recording */}
         <div className="grid h-auto w-full  card bg-base-300 rounded-box place-items-center pb-4">
           <div className="mt-9">
-            <BasicDropdown 
-              characters={dummyArray}
-              onChangeHandler={dummyFunction}
-              text="Streams"
-            />
+            
           </div>
 
           <br />

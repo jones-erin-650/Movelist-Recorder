@@ -25,4 +25,5 @@ contextBridge.exposeInMainWorld('ipcRenderer', {
 //IF YOU NEED TO MAKE CALLS TO ELECTRON MODULES ADD THE CHANNELS HERE (and call with window.api.{functionName})
 contextBridge.exposeInMainWorld('api', {
   selectFolder: () => ipcRenderer.invoke('dialog:openDirectory'),
+  getDisplays: () => ipcRenderer.invoke('get-displays'),
 })

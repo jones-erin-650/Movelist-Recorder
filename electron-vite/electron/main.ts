@@ -1,4 +1,4 @@
-import { app, BrowserWindow,desktopCapturer,dialog } from 'electron'
+import { app, BrowserWindow,desktopCapturer,dialog,Menu } from 'electron'
 import { ipcMain } from 'electron'
 import { createRequire } from 'node:module'
 import { fileURLToPath } from 'node:url'
@@ -83,6 +83,16 @@ ipcMain.handle('dialog:openDirectory', async () => {
   }
 })
 
-// ipcMain.handle('get-displays', () => {
-//   return desktopCapturer.getSources({types: ['screen', 'window']})
-// })
+ipcMain.handle('get-displays', async () => {
+  const inputSources = await desktopCapturer.getSources({types: ['screen', 'window']});
+
+  const optionMenu = Menu.buildFromTemplate(
+    inputSources.map(source => {
+      return {
+        label: source.name,
+        click: () => selectSource(source)
+      }
+    })
+  )
+  optionMenu.popup();
+})
