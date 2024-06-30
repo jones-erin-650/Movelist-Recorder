@@ -90,9 +90,10 @@ ipcMain.handle('get-displays', async () => {
     inputSources.map(source => {
       return {
         label: source.name,
-        click: () => selectSource(source)
+        id: source.name
       }
     })
   )
   optionMenu.popup();
+  return optionMenu //need to be able to access this Menu from Stream.tsx but it cannot be sent over IPC?
 })

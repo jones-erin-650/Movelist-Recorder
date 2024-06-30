@@ -2,8 +2,23 @@
 function getSources(event) {
   event.preventDefault()
   //@ts-ignore
-	window.api.getDisplays()
+	const menu = window.api.getDisplays() //IPC cant clone the Menu object
+  console.log(menu)
 }	
+
+async function selectSource(source) {
+  const streamHTML = document.querySelector('video')
+
+  const constraints = {
+    audio: false,
+    video: true
+  };
+  
+  const stream = await navigator.mediaDevices.getUserMedia(constraints)
+  //@ts-ignore
+  streamHTML.srcObject = stream
+  streamHTML?.play();
+}
 
 const Stream = () => {
   return (
